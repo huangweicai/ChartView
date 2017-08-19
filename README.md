@@ -2,14 +2,14 @@
 
 >体验apk：[https://fir.im/6sf2](https://fir.im/6sf2)
 github图表使用演示地址：[https://github.com/huangweicai/chart](https://github.com/huangweicai/chart)
-快捷使用：compile 'com.hwc:chart:1.0.1'
+快捷使用：compile 'com.hwc:chart :1.0.1'
 
 >欢迎关注oklib，后面图表的所有源码都会集成到oklib库中[http://www.jianshu.com/p/87e7392a16ff](http://www.jianshu.com/p/87e7392a16ff)
 
 ![图表演示](http://upload-images.jianshu.io/upload_images/2405826-d76c179040cc2d27.GIF?imageMogr2/auto-orient/strip)
 
 
-#####体重图表使用样例：
+体重图表使用样例：
 ```
 public class WeightChartFragment extends Fragment {
     private WeightChartView chartView1;
@@ -199,7 +199,7 @@ public class WeightChartFragment extends Fragment {
 </LinearLayout>
 ```
 
-#####血压图表使用样例：
+血压图表使用样例：
 ```
 public class BloodChartFragment extends Fragment {
     private BloodChartView chartView1;
@@ -390,7 +390,7 @@ public class BloodChartFragment extends Fragment {
 
 ```
 
-#####心率图表使用样例：
+心率图表使用样例：
 ```
 public class RateChartFragment extends Fragment {
     private RateChartView chartView1;
@@ -580,7 +580,7 @@ public class RateChartFragment extends Fragment {
 </LinearLayout>
 ```
 
-#####运动图表使用样例：
+运动图表使用样例：
 ```
 public class SportChartFragment extends Fragment {
     private SportChartView chartView1;
@@ -765,4 +765,4 @@ public class SportChartFragment extends Fragment {
 </LinearLayout>
 ```
 
-#####以上就是这次图表的所有内容，如果在使用过程中遇到问题或更好的建议，欢迎留言私信，作者将竭诚解决。最后，有帮助到您的欢迎点赞关注，您的支持是对作者最大的支持，谢谢！
+以上就是这次图表的所有内容，如果在使用过程中遇到问题或更好的建议，欢迎留言私信，作者将竭诚解决。最后，有帮助到您的欢迎点赞关注，您的支持是对作者最大的支持，谢谢！

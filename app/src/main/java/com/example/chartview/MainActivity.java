@@ -12,11 +12,6 @@ import com.example.chartview.fragment.RateChartFragment;
 import com.example.chartview.fragment.SportChartFragment;
 import com.example.chartview.fragment.WeightChartFragment;
 
- /**
-   * 时间：2017/8/19
-   * 作者：黄伟才
-   * 描述：主界面
-   */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     private Button btn_weight;
     private Button btn_blood;

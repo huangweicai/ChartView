@@ -13,58 +13,64 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <TextView
-                android:text="血压，自然日，单位mmHg"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="血压，自然日，单位mmHg" />
+
             <com.oklib.view.chart.BloodChartView
                 android:id="@+id/weightChart1"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
                 android:background="@drawable/round_white_alpha" />
+
             <TextView
-                android:text="血压，自然周，单位mmHg"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="血压，自然周，单位mmHg" />
+
             <com.oklib.view.chart.BloodChartView
                 android:id="@+id/weightChart2"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
                 android:background="@drawable/round_white_alpha" />
+
             <TextView
-                android:text="血压，自然月，单位mmHg"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="血压，自然月，单位mmHg" />
+
             <com.oklib.view.chart.BloodChartView
                 android:id="@+id/weightChart3"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
                 android:background="@drawable/round_white_alpha" />
 
             <TextView
-                android:text="血压，自然年，单位mmHg"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="血压，自然年，单位mmHg" />
+
             <com.oklib.view.chart.BloodChartView
                 android:id="@+id/weightChart4"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:layout_marginBottom="10dp"
                 android:background="@drawable/round_white_alpha" />
 
         </LinearLayout>
     </ScrollView>
-
 
 </LinearLayout>

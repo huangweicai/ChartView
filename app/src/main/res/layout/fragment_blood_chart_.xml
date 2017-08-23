@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f8973d"
+    android:background="#f074af"
     android:orientation="vertical">
 
     <ScrollView
@@ -17,9 +17,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="运动，自然日，单位Km" />
+                android:text="血压，自然日，单位mmHg" />
 
-            <com.oklib.view.chart.BarChartView
+            <com.oklib.view.chart.CustomizedBloodChartView
                 android:id="@+id/weightChart1"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -31,9 +31,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="运动，自然周，单位Km" />
+                android:text="血压，自然周，单位mmHg" />
 
-            <com.oklib.view.chart.BarChartView
+            <com.oklib.view.chart.CustomizedBloodChartView
                 android:id="@+id/weightChart2"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -45,9 +45,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="运动，自然月，单位Km" />
+                android:text="血压，自然月，单位mmHg" />
 
-            <com.oklib.view.chart.BarChartView
+            <com.oklib.view.chart.CustomizedBloodChartView
                 android:id="@+id/weightChart3"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -59,9 +59,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="运动，自然年，单位Km" />
+                android:text="血压，自然年，单位mmHg" />
 
-            <com.oklib.view.chart.BarChartView
+            <com.oklib.view.chart.CustomizedBloodChartView
                 android:id="@+id/weightChart4"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"

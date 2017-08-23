@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.chartview.R;
 import com.oklib.view.chart.BaseChartView;
-import com.oklib.view.chart.WeightChartView;
+import com.oklib.view.chart.LineChartView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,23 +25,24 @@ import java.util.List;
  */
 
 public class WeightChartFragment extends Fragment {
-    private WeightChartView chartView1;
-    private WeightChartView chartView2;
-    private WeightChartView chartView3;
-    private WeightChartView chartView4;
+    private LineChartView chartView1;
+    private LineChartView chartView2;
+    private LineChartView chartView3;
+    private LineChartView chartView4;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_weight_chart, null, false);
-        chartView1 = (WeightChartView) view.findViewById(R.id.weightChart1);
-        chartView2 = (WeightChartView) view.findViewById(R.id.weightChart2);
-        chartView3 = (WeightChartView) view.findViewById(R.id.weightChart3);
-        chartView4 = (WeightChartView) view.findViewById(R.id.weightChart4);
+        chartView1 = (LineChartView) view.findViewById(R.id.weightChart1);
+        chartView2 = (LineChartView) view.findViewById(R.id.weightChart2);
+        chartView3 = (LineChartView) view.findViewById(R.id.weightChart3);
+        chartView4 = (LineChartView) view.findViewById(R.id.weightChart4);
         return view;
     }
 
     public void showChart() {
+        //注意：图表使用一定要延迟使用
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
@@ -52,28 +53,28 @@ public class WeightChartFragment extends Fragment {
                         .setTextSize(24)
                         .setCircleRadiusSize(14)
                         .setLineSize(10)//以上子类内容，必须写在下面方法上面
-                        .isShowDatumLine_X(false)
+                        .isShowDatumLine_X(true)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.DAY)
                         .setYMaxValue(150)
                         .setUnitValueText("Kg")
                         .refreshData(getDayData());
                 chartView2
-                        .isShowDatumLine_X(false)
+                        .isShowDatumLine_X(true)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.WEEK)
                         .setYMaxValue(150)
                         .setUnitValueText("Kg")
                         .refreshData(getWeekData());
                 chartView3
-                        .isShowDatumLine_X(false)
+                        .isShowDatumLine_X(true)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.MONTH)
                         .setYMaxValue(150)
                         .setUnitValueText("Kg")
                         .refreshData(getMonthData());
                 chartView4
-                        .isShowDatumLine_X(false)
+                        .isShowDatumLine_X(true)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.YEAR)
                         .setYMaxValue(150)
@@ -98,12 +99,12 @@ public class WeightChartFragment extends Fragment {
     private List<BaseChartView.DataBean> getWeekData() {
         //周数据源
         List<BaseChartView.DataBean> datas2 = new ArrayList<>();
-        datas2.add(new BaseChartView.DataBean("2017-08-14 16:17:00", 60f));
-        datas2.add(new BaseChartView.DataBean("2017-08-15 16:17:00", 86f));
-        datas2.add(new BaseChartView.DataBean("2017-08-16 16:17:00", 86f));
-        datas2.add(new BaseChartView.DataBean("2017-08-18 16:17:00", 68f));
-        datas2.add(new BaseChartView.DataBean("2017-08-19 16:17:00", 72f));
-        datas2.add(new BaseChartView.DataBean("2017-08-20 16:17:00", 112f));
+        datas2.add(new BaseChartView.DataBean("2017-08-21 16:17:00", 60f));
+        datas2.add(new BaseChartView.DataBean("2017-08-22 16:17:00", 86f));
+        datas2.add(new BaseChartView.DataBean("2017-08-23 16:17:00", 86f));
+        datas2.add(new BaseChartView.DataBean("2017-08-24 16:17:00", 68f));
+        datas2.add(new BaseChartView.DataBean("2017-08-25 16:17:00", 72f));
+        datas2.add(new BaseChartView.DataBean("2017-08-26 16:17:00", 112f));
         return datas2;
     }
 

@@ -12,7 +12,13 @@ import com.example.chartview.fragment.BloodChartFragment_;
 import com.example.chartview.fragment.RateChartFragment;
 import com.example.chartview.fragment.SportChartFragment;
 import com.example.chartview.fragment.WeightChartFragment;
-
+ /**
+   * 时间：2017/8/23
+   * 作者：黄伟才
+   * 简书：http://www.jianshu.com/p/87e7392a16ff
+   * github：https://github.com/huangweicai/OkLibDemo
+   * 描述：合并分支
+   */
 public class MainActivity extends AppCompatActivity {
     private TabLayout toolbar_tl_tab;
     private ViewPager vp_container;

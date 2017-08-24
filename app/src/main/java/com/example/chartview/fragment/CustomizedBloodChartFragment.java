@@ -9,8 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.chartview.R;
-import com.oklib.view.chart.BaseChartView;
-import com.oklib.view.chart.CustomizedBloodChartView;
+import com.hwc.chart.BaseChartView;
+import com.hwc.chart.CustomizedBloodChartView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ import java.util.List;
  * 描述：
  */
 
-public class BloodChartFragment_ extends Fragment {
+public class CustomizedBloodChartFragment extends Fragment {
     private CustomizedBloodChartView chartView1;
     private CustomizedBloodChartView chartView2;
     private CustomizedBloodChartView chartView3;
@@ -45,34 +45,36 @@ public class BloodChartFragment_ extends Fragment {
             @Override
             public void run() {
                 chartView1
-//                        .setNoMedicineColor(0xffff0000)
-//                        .setMedicineColor(0xff00ff00)
-//                        .setNoMedicineText("未打针")
-//                        .setMedicineText("打针")
-//                        .setBloodText("高针114-128/低针68-78")
+                        .setNoMedicineColor(0xffff0000)
+                        .setMedicineColor(0xff00ff00)
+                        .setNoMedicineText("未打针")
+                        .setMedicineText("打针")
+                        .setBloodText("高针114-128/低针68-78")
+                        .setMedicineScaleColor(0x900000ff)
+                        .setNoMedicineScaleColor(0x9000ffff)
                         .setPillarWidth(26f)//以上子类内容，必须写在下面方法上面
-                        .isShowDatumLine_X(true)
+                        .isShowDatumLine_X(false)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.DAY)
                         .setYMaxValue(240)
                         .setUnitValueText("mmHg")
                         .refreshData(getDayData());
                 chartView2
-                        .isShowDatumLine_X(true)
+                        .isShowDatumLine_X(false)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.WEEK)
                         .setYMaxValue(240)
                         .setUnitValueText("mmHg")
                         .refreshData(getWeekData());
                 chartView3
-                        .isShowDatumLine_X(true)
+                        .isShowDatumLine_X(false)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.MONTH)
                         .setYMaxValue(240)
                         .setUnitValueText("mmHg")
                         .refreshData(getMonthData());
                 chartView4
-                        .isShowDatumLine_X(true)
+                        .isShowDatumLine_X(false)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.YEAR)
                         .setYMaxValue(240)

@@ -9,8 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.chartview.R;
-import com.oklib.view.chart.BaseChartView;
-import com.oklib.view.chart.BarChartView;
+import com.hwc.chart.BarChartView;
+import com.hwc.chart.BaseChartView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ import java.util.List;
  * 描述：
  */
 
-public class SportChartFragment extends Fragment {
+public class BarChartFragment extends Fragment {
     private BarChartView chartView1;
     private BarChartView chartView2;
     private BarChartView chartView3;
@@ -47,28 +47,28 @@ public class SportChartFragment extends Fragment {
                 chartView1
                         .setPillarWidth(30f)
                         .setPillarColor(0x90ff0000)//以上子类内容，必须写在下面方法上面
-                        .isShowDatumLine_X(true)
+                        .isShowDatumLine_X(false)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.DAY)
                         .setYMaxValue(30)
                         .setUnitValueText("Km")
                         .refreshData(getDayData());
                 chartView2
-                        .isShowDatumLine_X(true)
+                        .isShowDatumLine_X(false)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.WEEK)
                         .setYMaxValue(30)
                         .setUnitValueText("Km")
                         .refreshData(getWeekData());
                 chartView3
-                        .isShowDatumLine_X(true)
+                        .isShowDatumLine_X(false)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.MONTH)
                         .setYMaxValue(30)
                         .setUnitValueText("Km")
                         .refreshData(getMonthData());
                 chartView4
-                        .isShowDatumLine_X(true)
+                        .isShowDatumLine_X(false)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.YEAR)
                         .setYMaxValue(30)

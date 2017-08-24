@@ -19,7 +19,7 @@
                 android:layout_height="wrap_content"
                 android:text="运动，自然日，单位Km" />
 
-            <com.oklib.view.chart.BarChartView
+            <com.hwc.chart.BarChartView
                 android:id="@+id/weightChart1"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:text="运动，自然周，单位Km" />
 
-            <com.oklib.view.chart.BarChartView
+            <com.hwc.chart.BarChartView
                 android:id="@+id/weightChart2"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:text="运动，自然月，单位Km" />
 
-            <com.oklib.view.chart.BarChartView
+            <com.hwc.chart.BarChartView
                 android:id="@+id/weightChart3"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:text="运动，自然年，单位Km" />
 
-            <com.oklib.view.chart.BarChartView
+            <com.hwc.chart.BarChartView
                 android:id="@+id/weightChart4"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"

@@ -19,7 +19,7 @@
                 android:layout_height="wrap_content"
                 android:text="体重，自然日，单位Kg" />
 
-            <com.oklib.view.chart.LineChartView
+            <com.hwc.chart.LineChartView
                 android:id="@+id/weightChart1"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:text="体重，自然周，单位Kg" />
 
-            <com.oklib.view.chart.LineChartView
+            <com.hwc.chart.LineChartView
                 android:id="@+id/weightChart2"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:text="体重，自然月，单位Kg" />
 
-            <com.oklib.view.chart.LineChartView
+            <com.hwc.chart.LineChartView
                 android:id="@+id/weightChart3"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:text="体重，自然年，单位Kg" />
 
-            <com.oklib.view.chart.LineChartView
+            <com.hwc.chart.LineChartView
                 android:id="@+id/weightChart4"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"

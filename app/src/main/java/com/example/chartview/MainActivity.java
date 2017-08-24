@@ -7,11 +7,11 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.chartview.fragment.BloodChartFragment;
-import com.example.chartview.fragment.BloodChartFragment_;
-import com.example.chartview.fragment.RateChartFragment;
-import com.example.chartview.fragment.SportChartFragment;
-import com.example.chartview.fragment.WeightChartFragment;
+import com.example.chartview.fragment.HistogramBarChartFragment;
+import com.example.chartview.fragment.CustomizedBloodChartFragment;
+import com.example.chartview.fragment.CurveChartFragment;
+import com.example.chartview.fragment.BarChartFragment;
+import com.example.chartview.fragment.LineChartFragment;
  /**
    * 时间：2017/8/23
    * 作者：黄伟才
@@ -37,27 +37,27 @@ public class MainActivity extends AppCompatActivity {
             public Fragment getItem(int position) {
                 if (position == 0) {
                     //折线图
-                    WeightChartFragment chartFragment = new WeightChartFragment();
+                    LineChartFragment chartFragment = new LineChartFragment();
                     chartFragment.showChart();
                     return chartFragment;
                 } else if (position == 1) {
                     //曲线图
-                    RateChartFragment chartFragment = new RateChartFragment();
+                    CurveChartFragment chartFragment = new CurveChartFragment();
                     chartFragment.showChart();
                     return chartFragment;
                 } else if (position == 2) {
                     //柱状图
-                    SportChartFragment chartFragment = new SportChartFragment();
+                    BarChartFragment chartFragment = new BarChartFragment();
                     chartFragment.showChart();
                     return chartFragment;
                 } else if (position == 3) {
                     //镂空柱状图
-                    BloodChartFragment chartFragment = new BloodChartFragment();
+                    HistogramBarChartFragment chartFragment = new HistogramBarChartFragment();
                     chartFragment.showChart();
                     return chartFragment;
                 } else if (position == 4) {
                     //定制血压图
-                    BloodChartFragment_ chartFragment = new BloodChartFragment_();
+                    CustomizedBloodChartFragment chartFragment = new CustomizedBloodChartFragment();
                     chartFragment.showChart();
                     return chartFragment;
                 }

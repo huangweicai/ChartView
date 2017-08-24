@@ -19,7 +19,7 @@
                 android:layout_height="wrap_content"
                 android:text="血压，自然日，单位mmHg" />
 
-            <com.oklib.view.chart.CustomizedBloodChartView
+            <com.hwc.chart.CustomizedBloodChartView
                 android:id="@+id/weightChart1"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -33,7 +33,7 @@
                 android:layout_height="wrap_content"
                 android:text="血压，自然周，单位mmHg" />
 
-            <com.oklib.view.chart.CustomizedBloodChartView
+            <com.hwc.chart.CustomizedBloodChartView
                 android:id="@+id/weightChart2"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:text="血压，自然月，单位mmHg" />
 
-            <com.oklib.view.chart.CustomizedBloodChartView
+            <com.hwc.chart.CustomizedBloodChartView
                 android:id="@+id/weightChart3"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
@@ -61,7 +61,7 @@
                 android:layout_height="wrap_content"
                 android:text="血压，自然年，单位mmHg" />
 
-            <com.oklib.view.chart.CustomizedBloodChartView
+            <com.hwc.chart.CustomizedBloodChartView
                 android:id="@+id/weightChart4"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"

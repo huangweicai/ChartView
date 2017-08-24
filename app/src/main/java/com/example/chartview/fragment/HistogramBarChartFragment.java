@@ -9,8 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.chartview.R;
-import com.oklib.view.chart.BaseChartView;
-import com.oklib.view.chart.HistogramBarChartView;
+import com.hwc.chart.BaseChartView;
+import com.hwc.chart.HistogramBarChartView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ import java.util.List;
  * 描述：
  */
 
-public class BloodChartFragment extends Fragment {
+public class HistogramBarChartFragment extends Fragment {
     private HistogramBarChartView chartView1;
     private HistogramBarChartView chartView2;
     private HistogramBarChartView chartView3;
@@ -51,7 +51,7 @@ public class BloodChartFragment extends Fragment {
                         .setMedicineText("打针")
                         .setBloodText("高针114-128/低针68-78")
                         .setPillarWidth(26f)//以上子类内容，必须写在下面方法上面
-                        .isShowDatumLine_X(true)
+                        .isShowDatumLine_X(false)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.DAY)
                         .setYMaxValue(240)
@@ -59,21 +59,21 @@ public class BloodChartFragment extends Fragment {
                         .refreshData(getDayData());
 
                 chartView2
-                        .isShowDatumLine_X(true)
+                        .isShowDatumLine_X(false)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.WEEK)
                         .setYMaxValue(240)
                         .setUnitValueText("mmHg")
                         .refreshData(getWeekData());
                 chartView3
-                        .isShowDatumLine_X(true)
+                        .isShowDatumLine_X(false)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.MONTH)
                         .setYMaxValue(240)
                         .setUnitValueText("mmHg")
                         .refreshData(getMonthData());
                 chartView4
-                        .isShowDatumLine_X(true)
+                        .isShowDatumLine_X(false)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.YEAR)
                         .setYMaxValue(240)

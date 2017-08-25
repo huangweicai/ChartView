@@ -2,7 +2,7 @@
 
 >体验apk：[https://fir.im/6sf2](https://fir.im/6sf2)
 github图表使用演示地址：[https://github.com/huangweicai/chart](https://github.com/huangweicai/chart)
-快捷使用：compile 'me.hwc:chart:1.0.1'
+快捷使用：compile 'me.hwc:chart :1.0.1'
 
 >欢迎关注oklib，后面图表的所有源码都会集成到oklib库中[http://www.jianshu.com/p/87e7392a16ff](http://www.jianshu.com/p/87e7392a16ff)
 

@@ -32,7 +32,7 @@ public class CustomizedBloodChartFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_blood_chart_, null, false);
+        View view = inflater.inflate(R.layout.fragment_cbarchart, null, false);
         chartView1 = (CustomizedBloodChartView) view.findViewById(R.id.weightChart1);
         chartView2 = (CustomizedBloodChartView) view.findViewById(R.id.weightChart2);
         chartView3 = (CustomizedBloodChartView) view.findViewById(R.id.weightChart3);

@@ -32,7 +32,7 @@ public class HistogramBarChartFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_blood_chart, null, false);
+        View view = inflater.inflate(R.layout.fragment_hbarchart, null, false);
         chartView1 = (HistogramBarChartView) view.findViewById(R.id.weightChart1);
         chartView2 = (HistogramBarChartView) view.findViewById(R.id.weightChart2);
         chartView3 = (HistogramBarChartView) view.findViewById(R.id.weightChart3);
@@ -45,17 +45,20 @@ public class HistogramBarChartFragment extends Fragment {
             @Override
             public void run() {
                 chartView1
-                        .setNoMedicineColor(0xffff0000)
-                        .setMedicineColor(0xff00ff00)
-                        .setNoMedicineText("未打针")
-                        .setMedicineText("打针")
-                        .setBloodText("高针114-128/低针68-78")
-                        .setPillarWidth(26f)//以上子类内容，必须写在下面方法上面
+                        .setPillarLightColor(0xffff0000)
+                        .setPillarColor(0xff00ff00)
+                        .setPillarLeftLightText("未打针")
+                        .setPillarLeftText("打针")
+                        .setPillarRightText("高针114-128/低针68-78")
+                        .setPillarWidth(26f)
+                        .setShowYCenterText(true)
+                        .setShowTopInfo(true)//以上子类内容，必须写在下面方法上面
                         .isShowDatumLine_X(false)
                         .isShowDatumLine_Y(false)
                         .setType(BaseChartView.DAY)
                         .setYMaxValue(240)
                         .setUnitValueText("mmHg")
+                        .setChartColor(0xFFF89A3C)
                         .refreshData(getDayData());
 
                 chartView2

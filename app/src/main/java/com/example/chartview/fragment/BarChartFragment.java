@@ -32,7 +32,7 @@ public class BarChartFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_sport_chart, null, false);
+        View view = inflater.inflate(R.layout.fragment_barchart, null, false);
         chartView1 = (BarChartView) view.findViewById(R.id.weightChart1);
         chartView2 = (BarChartView) view.findViewById(R.id.weightChart2);
         chartView3 = (BarChartView) view.findViewById(R.id.weightChart3);

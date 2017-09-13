@@ -33,7 +33,7 @@ public class LineChartFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_weight_chart, null, false);
+        View view = inflater.inflate(R.layout.fragment_linechart, null, false);
         chartView1 = (LineChartView) view.findViewById(R.id.weightChart1);
         chartView2 = (LineChartView) view.findViewById(R.id.weightChart2);
         chartView3 = (LineChartView) view.findViewById(R.id.weightChart3);

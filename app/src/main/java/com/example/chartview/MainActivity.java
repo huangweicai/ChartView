@@ -7,22 +7,24 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-import com.example.chartview.fragment.HistogramBarChartFragment;
-import com.example.chartview.fragment.CustomizedBloodChartFragment;
-import com.example.chartview.fragment.CurveChartFragment;
 import com.example.chartview.fragment.BarChartFragment;
+import com.example.chartview.fragment.CurveChartFragment;
+import com.example.chartview.fragment.CustomizedBloodChartFragment;
+import com.example.chartview.fragment.HistogramBarChartFragment;
 import com.example.chartview.fragment.LineChartFragment;
- /**
-   * 时间：2017/8/23
-   * 作者：黄伟才
-   * 简书：http://www.jianshu.com/p/87e7392a16ff
-   * github：https://github.com/huangweicai/OkLibDemo
-   * 描述：合并分支
-   */
+import com.example.chartview.fragment.SportBarChartFragment;
+
+/**
+ * 时间：2017/8/23
+ * 作者：黄伟才
+ * 简书：http://www.jianshu.com/p/87e7392a16ff
+ * github：https://github.com/huangweicai/OkLibDemo
+ * 描述：合并分支
+ */
 public class MainActivity extends AppCompatActivity {
     private TabLayout toolbar_tl_tab;
     private ViewPager vp_container;
-    private String[] titles = {"折线图", "曲线图", "柱状图", "镂空柱状图", "定制血压图"};
+    private String[] titles = {"折线图", "曲线图", "柱状图", "镂空柱状图", "定制血压图", "运动柱状图"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +60,11 @@ public class MainActivity extends AppCompatActivity {
                 } else if (position == 4) {
                     //定制血压图
                     CustomizedBloodChartFragment chartFragment = new CustomizedBloodChartFragment();
+                    chartFragment.showChart();
+                    return chartFragment;
+                } else if (position == 5) {
+                    //运动柱状图
+                    SportBarChartFragment chartFragment = new SportBarChartFragment();
                     chartFragment.showChart();
                     return chartFragment;
                 }

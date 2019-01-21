@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    tools:context=".FllowerViewActivity"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/btn_start"
+        android:text="开始撒花"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <com.example.chartview.view.FllowerAnimation
+        android:id="@+id/fllower"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>
